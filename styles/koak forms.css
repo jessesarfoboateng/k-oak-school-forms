@@ -1,0 +1,98 @@
+.logo {
+  width:140px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 51, 102);
+  padding: 0px 60px;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  gap: -1000px;
+  align-items: center;
+}
+
+.middle-section p {
+  margin: 13px;
+}
+
+.school-name {
+  font-family: Poppins, Arial;
+  color: white;
+  font-weight: Bold;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.location {
+  font-size: 17px;
+  font-weight: Bold;
+}
+
+.form-title {
+  font-family: 'Times New Roman', Times, serif, Arial;
+  color: white;
+  font-weight: Bold;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.dotted-border {
+  border: 2px dotted black;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .header {
+    flex-direction: row; /* Ensure items stay in a row */
+    justify-content: space-between; /* Maintain space between items */
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .logo {
+    width: 100px; /* Resize logo for smaller screens */
+  }
+
+  .middle-section {
+    display: flex;
+    flex-direction: column; /* Keep text in a column */
+    align-items: center; /* Center align text */
+    gap: 3px; /* Reduce the gap between elements */
+    text-align: center; /* Center text for a cleaner look */
+  }
+
+  .school-name {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    letter-spacing: 1px; /* Decrease letter-spacing */
+  }
+
+  .location {
+    font-size: 14px; /* Adjust font size for readability */
+  }
+
+  .form-title {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    letter-spacing: 1.5px; /* Decrease letter-spacing */
+  }
+
+  .dotted-border {
+    width: 120px; /* Resize passport picture placeholder */
+    height: 120px; /* Adjust height as needed */
+    margin-left: 10px; /* Optional margin for spacing */
+  }
+}
+
+
+
+
