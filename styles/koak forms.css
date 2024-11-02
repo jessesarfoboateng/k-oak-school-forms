@@ -43,7 +43,7 @@
 }
 
 .dotted-border {
-  border: 2px dotted black;
+  border: 2px dotted rgb(170, 169, 169);
   width: 140px;
   height: 140px;
   display: flex;
@@ -51,50 +51,97 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
+  color: gray;
 }
+
+.space-title {
+  display: flex;
+  font-family: Poppins, Arial;
+  font-size: 18px;
+  background-color: rgba(9, 56, 75, 0.781);
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+}
+
+.requirement-name {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.user-input {
+  width: 600px;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+  
+}
+
+.user-input:focus {
+  border-bottom: 2px solid blue; /* Change color when active */
+}
+
+
+/*.space-title-layout {
+  display: flex;
+  justify-content: center;
+}*/
 
 @media (max-width: 992px) {
   .header {
-    flex-direction: row; /* Keep items in a row */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
-    padding: 5px 10px; /* Adjust padding for a more compact look */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
   }
 
   .logo {
-    width: 70px; /* Resize logo for smaller screens */
-    margin-right: 10px; /* Optional margin for spacing */
+    width: 120px;
+    margin-right: 10px;
   }
 
   .middle-section {
     display: flex;
-    flex-direction: column; /* Keep text in a column */
-    align-items: center; /* Center align text */
-    gap: 1px; /* Further reduce the gap between elements */
-    text-align: center; /* Center text for a cleaner look */
-    flex-grow: 1; /* Allow middle section to take available space */
+    flex-direction: column;
+    align-items: center;
+    gap: 1px; 
+    text-align: center;
+    flex-grow: 1;
   }
 
   .school-name {
-    font-size: 16px; /* Adjust font size for smaller screens */
-    letter-spacing: 0.5px; /* Decrease letter-spacing */
+    font-size: 16px;
+    letter-spacing: 0.5px;
   }
 
   .location {
-    font-size: 12px; /* Adjust font size for readability */
+    font-size: 12px;
   }
 
   .form-title {
-    font-size: 14px; /* Adjust font size for smaller screens */
-    letter-spacing: 0.5px; /* Decrease letter-spacing */
+    font-size: 14px;
+    letter-spacing: 0.5px; 
   }
 
   .dotted-border {
-    width: 80px; /* Resize passport picture placeholder */
-    height: 80px; /* Adjust height as needed */
-    margin-left: 10px; /* Optional margin for spacing */
-    text-align: center; /* Center text inside the border */
-    font-size: 12px; /* Adjust font size for better fit */
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 12px;
   }
 }
 
