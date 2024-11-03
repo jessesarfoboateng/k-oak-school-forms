@@ -73,6 +73,7 @@
 
 .form-group {
   display: flex;
+  
 }
 
 .requirement-name {
@@ -81,16 +82,16 @@
 }
 
 .user-input {
-  width: 600px;
+  width: 500px;
   border: none;
   border-bottom: 1px solid black;
-  padding: 5px;
-  outline: none;
   transition: border-color 0.3s;
+  outline: none;
   
 }
 
 .user-input:focus {
+  border: none;
   border-bottom: 2px solid blue; /* Change color when active */
 }
 
@@ -142,6 +143,11 @@
     margin-left: 10px;
     text-align: center;
     font-size: 12px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
   }
 }
 
