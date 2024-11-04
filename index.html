@@ -45,16 +45,59 @@
         <p CLASS="space-title">A. CHILD INFORMATION</p>
       </div>
 
+
       <div class="form-container">
+        <!-- First form group with two fields in a row -->
         <div class="form-group">
-          <label class="requirement-name">Child's Surname:</label>
-          <input type="text" id="surname" name="surname" class="user-input">
+            <div class="form-field">
+                <label class="label" for="surname">Child's Surname:</label>
+                <input class="input" type="text" id="surname" name="surname">
+            </div>
+            <div class="form-field">
+                <label class="label" for="first-name">First Name:</label>
+                <input class="input" type="text" id="first-name" name="first-name">
+            </div>
         </div>
-      <div class="form-group">
-          <label class="requirement-name" for="first-name">First Name:</label>
-          <input type="text" id="first-name" name="first-name" class="user-input">
-        </div>
+        
+        <!-- Second form group with two fields in a row -->
+        <nav class="form-group">
+            <div class="form-field">
+                <label class="label" for="age">Current Age:</label>
+                <input class="input" type="text" id="age" name="age">
+            </div>
+            <div class="form-field">
+                <label class="label" for="dob">Date of Birth:</label>
+                <input class="input" type="date" id="dob" name="dob">
+            </div>
+          </nav>
+
+        <nav class="form-group">
+          <div class="form-field">
+              <label class="label" for="place-of-birth">Place of Birth:</label>
+              <input class="input" type="text" id="place-of-birth" name="place-of-birth">
+          </div>
+          <div class="form-field">
+              <label class="label" for="nationality">Nationality:</label>
+              <input class="input" type="text" id="nationality" name="nationality">
+          </div>
+        </nav>
+
+      <div class="form-field">
+        <label class="label" for="address">Residential Address:</label>
+        <input class="input" type="text" id="address" name="address">
       </div>
+
+      <div class="form-field">
+        <label class="label" for="language">Language(s) spoken at home:</label>
+        <input class="input" type="text" id="language" name="language">
+      </div>
+
+
+    </div>
+
+</body>
+</html>
+
 
 
 </article>

@@ -30,16 +30,17 @@
 }
 
 .location {
-  font-size: 17px;
+  font-family: Inter, Arial;
+  font-size: 19px;
   font-weight: Bold;
 }
 
 .form-title {
-  font-family: 'Times New Roman', Times, serif, Arial;
+  font-family: Poppins, Arial;
   color: white;
   font-weight: Bold;
-  font-size: 20px;
-  letter-spacing: 3px;
+  font-size: 22px;
+  letter-spacing: 5px;
 }
 
 .dotted-border {
@@ -62,37 +63,47 @@
   color: white;
   margin-top: 20px;
   padding: 10px;
+}
   
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    padding-top: 0px;
 }
 
 .form-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .form-group {
-  display: flex;
-  
+    flex: 1 1 calc(50% - 20px); /* Two form groups per row with space between */
+    display: flex;
+    gap: 20px;
+    min-width: 300px;
 }
 
-.requirement-name {
-  font-size: 18px;
-  margin-top: 5px;
+.form-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
 }
 
-.user-input {
-  width: 500px;
-  border: none;
-  border-bottom: 1px solid black;
-  transition: border-color 0.3s;
-  outline: none;
-  
+.label {
+    font-family: Poppins, Arial;
+    font-weight: 500;
+    white-space: nowrap; /* Prevents the label from wrapping to a new line */
 }
 
-.user-input:focus {
-  border: none;
-  border-bottom: 2px solid blue; /* Change color when active */
+.input {
+    padding: 8px;
+    flex: 1; /* Allows the input to take up the remaining space */
 }
 
 
@@ -145,10 +156,26 @@
     font-size: 12px;
   }
 
-  .form-container {
+  .input {
+    width: 100%;
+  }
+
+  .form-field {
+    display: flex;
+    align-items: flex-start; 
+  }
+
+  .form-field, .form-group {
     display: flex;
     flex-direction: column;
+    
   }
+ 
+  .form-group {
+    flex: 1 1 100%; /* Full width on smaller screens */
+}
+
+
 }
 
 
