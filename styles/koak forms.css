@@ -24,13 +24,13 @@
 .school-name {
   font-family: Poppins, Arial;
   color: white;
-  font-weight: Bold;
+  font-weight: 500;
   font-size: 25px;
   letter-spacing: 2px;
 }
 
 .location {
-  font-family: Inter, Arial;
+  font-family: Poppins, Arial;
   font-size: 19px;
   font-weight: Bold;
 }
@@ -38,7 +38,7 @@
 .form-title {
   font-family: Poppins, Arial;
   color: white;
-  font-weight: Bold;
+  font-weight: 500;
   font-size: 22px;
   letter-spacing: 5px;
 }
@@ -70,40 +70,81 @@
 }
 
 body {
-    padding: 20px;
-    padding-top: 0px;
+  padding: 20px;
+  padding-top: 0px;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .form-group {
-    flex: 1 1 calc(50% - 20px); /* Two form groups per row with space between */
-    display: flex;
-    gap: 20px;
-    min-width: 300px;
+  flex: 1 1 calc(50% - 20px); /* Two form groups per row with space between */
+  display: flex;
+  gap: 20px;
+  min-width: 300px;
+ 
 }
 
 .form-field {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  margin-bottom: 20px;
 }
 
 .label {
-    font-family: Poppins, Arial;
-    font-weight: 500;
-    white-space: nowrap; /* Prevents the label from wrapping to a new line */
+  font-family: Poppins, Arial;
+  font-weight: 500;
+  white-space: nowrap; /* Prevents the label from wrapping to a new line */
 }
 
 .input {
-    padding: 8px;
-    flex: 1; /* Allows the input to take up the remaining space */
+  padding: 8px;
+  flex: 1; /* Allows the input to take up the remaining space */
+}
+
+.rating-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.rating-label {
+  font-weight: bold;
+}
+
+.rating-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-box {
+  width: 35px;
+  height: 35px;
+}
+
+.parent-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.father-side, .mother-side {
+  width: 48%;
+}
+
+.parent-type {
+  font-family: Poppins, Arial;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: -20px;
+  margin-bottom: 15px;
 }
 
 
@@ -163,6 +204,7 @@ body {
   .form-field {
     display: flex;
     align-items: flex-start; 
+    margin-bottom: 0px;
   }
 
   .form-field, .form-group {
@@ -173,6 +215,23 @@ body {
  
   .form-group {
     flex: 1 1 100%; /* Full width on smaller screens */
+}
+  
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.parent-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.father-side, .mother-side {
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 
