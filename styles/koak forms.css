@@ -72,21 +72,24 @@
 body {
   padding: 20px;
   padding-top: 0px;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
   gap: 20px;
 }
 
 .form-group {
   flex: 1 1 calc(50% - 20px); /* Two form groups per row with space between */
   display: flex;
-  gap: 20px;
-  min-width: 300px;
- 
+  gap: 20px; 
 }
 
 .form-field {
@@ -109,6 +112,7 @@ body {
   border-color: rgb(146, 145, 145);
   padding: 8px;
   flex: 1; /* Allows the input to take up the remaining space */
+  width: 100%;
 }
 
 .rating-container {
@@ -150,6 +154,31 @@ body {
   margin-bottom: 15px;
 }
 
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+} 
+table {
+  font-family: Poppins, Arial;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+td {
+  height: 300px;
+}
+
+.sub-header-row th {
+  border-top: none;
+}
+
 
 /*.space-title-layout {
   display: flex;
@@ -158,10 +187,14 @@ body {
 
 @media (max-width: 992px) {
   .header {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
+  }
+
+  body {
+    padding: 30px;
   }
 
   .logo {
@@ -200,8 +233,15 @@ body {
     font-size: 12px;
   }
 
+  .label {
+    white-space: normal;
+    overflow-wrap: break-word; 
+
+  }
+
   .input {
     width: 100%;
+    
   }
 
   .form-field {
