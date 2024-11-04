@@ -179,6 +179,24 @@ td {
   border-top: none;
 }
 
+.questionnaire-table {
+  width: 100%;
+  font-weight: 500;
+  border-collapse: collapse;
+  font-family: Poppins, Arial;
+}
+
+/* Styles for table cells */
+.question-cell {
+  border: 2px solid black;
+  padding: 12px;
+  vertical-align: top;
+  text-align: left;
+  white-space: normal; /* Allows text to wrap */
+  word-wrap: break-word; /* Ensures long words wrap */
+  height: 160px;
+}
+
 
 /*.space-title-layout {
   display: flex;
