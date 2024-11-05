@@ -27,7 +27,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles/koak forms.css">
-  <title>K-Oak Forms</title>
+  <title>K-OAK FORMS</title>
 </head>
 
 <body>
@@ -103,38 +103,38 @@
 
       <article class="rating-container">
         <p class="label">Please rate your child's English reading ability:</p>
-
+    
         <div class="rating-option">
-          <input class="input-box" type="checkbox" id="beginner" name="writing-ability" value="beginner">
-          <label class="label">Beginner</label>
+            <input class="input-box" type="radio" id="beginner" name="reading-ability" value="beginner">
+            <label class="label" for="beginner">Beginner</label>
         </div>
-
+    
         <div class="rating-option">
-          <input class="input-box" type="checkbox" id="intermediate" name="writing-ability" value="intermediate">
-          <label class="label">Intermediate</label>
+            <input class="input-box" type="radio" id="intermediate" name="reading-ability" value="intermediate">
+            <label class="label" for="intermediate">Intermediate</label>
         </div>
-
+    
         <div class="rating-option">
-          <input class="input-box" type="checkbox" id="advanced" name="writing-ability" value="advanced">
-          <label class="label">Advanced</label>
+            <input class="input-box" type="radio" id="advanced" name="reading-ability" value="advanced">
+            <label class="label" for="advanced">Advanced</label>
         </div>
-      </article>
-
+    </article>
+    
       <article class="rating-container">
         <p class="label">Please rate your child's English writing ability:</p>
 
         <div class="rating-option">
-          <input class="input-box" type="checkbox" id="beginner" name="writing-ability" value="beginner">
+          <input class="input-box" type="radio" id="beginner" name="writing-ability" value="beginner">
           <label class="label">Beginner</label>
         </div>
 
         <div class="rating-option">
-          <input class="input-box" type="checkbox" id="intermediate" name="writing-ability" value="intermediate">
+          <input class="input-box" type="radio" id="intermediate" name="writing-ability" value="intermediate">
           <label class="label">Intermediate</label>
         </div>
 
         <div class="rating-option">
-          <input class="input-box" type="checkbox" id="advanced" name="writing-ability" value="advanced">
+          <input class="input-box" type="radio" id="advanced" name="writing-ability" value="advanced">
           <label class="label">Advanced</label>
         </div>
       </article>
@@ -242,34 +242,32 @@
 
       <article class="rating-container">
         <p class="label">Child lives with:</p>
-
+    
         <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">Both Parents</label>
+            <input class="input-box" type="radio" id="both-parents" name="living-arrangement" value="both-parents">
+            <label class="label" for="both-parents">Both Parents</label>
         </div>
-
+    
         <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">Father only</label>
+            <input class="input-box" type="radio" id="father-only" name="living-arrangement" value="father-only">
+            <label class="label" for="father-only">Father only</label>
         </div>
-
+    
         <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">Mother only</label>
+            <input class="input-box" type="radio" id="mother-only" name="living-arrangement" value="mother-only">
+            <label class="label" for="mother-only">Mother only</label>
         </div>
-
+    
         <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">
-            <p class="form-field">
-              <label class="label">Other&#40;</label>
-              <label class="label">Please specify:</label>
-              <input class="input" type="text">
-              <label class="label">&#41;</label>
-            </p>
-          </label>
+            <input class="input-box" type="radio" id="other" name="living-arrangement" value="other">
+            <label class="label" for="other">Other</label>
+            <div class="form-field">
+                <label class="label" for="other-specify">Please specify:</label>
+                <input class="input" type="text" id="other-specify" name="other-specify" placeholder="Enter details">
+            </div>
         </div>
-      </article>
+    </article>
+    
 
       <div>
         <p class="space-title">C. GUARDIAN</p>
@@ -379,23 +377,23 @@
 
       <article class="rating-container">
         <p class="label">My Child has allergies:</p>
-
+    
         <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">No</label>
+            <input class="input-box" type="radio" id="allergies-no" name="allergies" value="no">
+            <label class="label" for="allergies-no">No</label>
         </div>
-
+    
         <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">Not Known</label>
+            <input class="input-box" type="radio" id="allergies-unknown" name="allergies" value="unknown">
+            <label class="label" for="allergies-unknown">Not Known</label>
         </div>
-
+    
         <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">Yes</label>
+            <input class="input-box" type="radio" id="allergies-yes" name="allergies" value="yes">
+            <label class="label" for="allergies-yes">Yes</label>
         </div>
-
-      </article>
+    </article>
+    
 
 
       <div class="form-field">
@@ -546,96 +544,78 @@
     </div>
 
 
-      <article class="rating-container" style = "display: flex; flex-direction: column; align-items:normal">
-        <p class="label">Two&#40;2&#41;coloured passport sized photograph received:</p>
-
-        <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">Yes</label>
-        </div>
-
-        <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">No</label>
-        </div>
-
-      </article>
-
-      <article class="rating-container" style = "display: flex; flex-direction: column; align-items:normal">
-        <p class="label">Two&#40;2&#41;coloured passport sized photograph of pickers received:</p>
+    <article class="rating-container" style="display: flex; flex-direction: column; align-items: normal;">
+      <p class="label">Two (2) coloured passport sized photograph received:</p>
+      <div class="rating-option">
+          <input class="input-box" type="radio" id="passport-photo-yes" name="passport-photo" value="yes">
+          <label class="label" for="passport-photo-yes">Yes</label>
+      </div>
+      <div class="rating-option">
+          <input class="input-box" type="radio" id="passport-photo-no" name="passport-photo" value="no">
+          <label class="label" for="passport-photo-no">No</label>
+      </div>
+  </article>
   
-        <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">Yes</label>
-        </div>
+  <article class="rating-container" style="display: flex; flex-direction: column; align-items: normal;">
+      <p class="label">Two (2) coloured passport sized photograph of pickers received:</p>
+      <div class="rating-option">
+          <input class="input-box" type="radio" id="pickers-photo-yes" name="pickers-photo" value="yes">
+          <label class="label" for="pickers-photo-yes">Yes</label>
+      </div>
+      <div class="rating-option">
+          <input class="input-box" type="radio" id="pickers-photo-no" name="pickers-photo" value="no">
+          <label class="label" for="pickers-photo-no">No</label>
+      </div>
+  </article>
   
-        <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">No</label>
-        </div>
+  <article class="rating-container" style="display: flex; flex-direction: column; align-items: normal;">
+      <p class="label">Progress report from previous school received:</p>
+      <div class="rating-option">
+          <input class="input-box" type="radio" id="progress-report-yes" name="progress-report" value="yes">
+          <label class="label" for="progress-report-yes">Yes</label>
+      </div>
+      <div class="rating-option">
+          <input class="input-box" type="radio" id="progress-report-no" name="progress-report" value="no">
+          <label class="label" for="progress-report-no">No</label>
+      </div>
+  </article>
   
-      </article>
-
-      <article class="rating-container" style = "display: flex; flex-direction: column; align-items:normal">
-        <p class="label">Progress report from previous school received:</p>
+  <article class="rating-container" style="display: flex; flex-direction: column; align-items: normal;">
+      <p class="label">Page copy of immunization certificate (preschoolers only) received:</p>
+      <div class="rating-option">
+          <input class="input-box" type="radio" id="immunization-yes" name="immunization" value="yes">
+          <label class="label" for="immunization-yes">Yes</label>
+      </div>
+      <div class="rating-option">
+          <input class="input-box" type="radio" id="immunization-no" name="immunization" value="no">
+          <label class="label" for="immunization-no">No</label>
+      </div>
+  </article>
   
-        <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">Yes</label>
-        </div>
+  <article class="rating-container" style="display: flex; flex-direction: column; align-items: normal;">
+      <p class="label">A photocopy of the child's NHIS card:</p>
+      <div class="rating-option">
+          <input class="input-box" type="radio" id="nhis-card-yes" name="nhis-card" value="yes">
+          <label class="label" for="nhis-card-yes">Yes</label>
+      </div>
+      <div class="rating-option">
+          <input class="input-box" type="radio" id="nhis-card-no" name="nhis-card" value="no">
+          <label class="label" for="nhis-card-no">No</label>
+      </div>
+  </article>
   
-        <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">No</label>
-        </div>
+  <article class="rating-container" style="display: flex; flex-direction: column; align-items: normal;">
+      <p class="label">Any other undertaking(s) received:</p>
+      <div class="rating-option">
+          <input class="input-box" type="radio" id="other-undertaking-yes" name="other-undertaking" value="yes">
+          <label class="label" for="other-undertaking-yes">Yes</label>
+      </div>
+      <div class="rating-option">
+          <input class="input-box" type="radio" id="other-undertaking-no" name="other-undertaking" value="no">
+          <label class="label" for="other-undertaking-no">No</label>
+      </div>
+  </article>
   
-      </article>
-
-      <article class="rating-container" style = "display: flex; flex-direction: column; align-items:normal">
-        <p class="label">Page copy of immunization certificate &#40;preschoolers&#41; only received:</p>
-  
-        <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">Yes</label>
-        </div>
-  
-        <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">No</label>
-        </div>
-  
-      </article>
-
-      <article class="rating-container" style = "display: flex; flex-direction: column; align-items:normal">
-        <p class="label">A photocopy of the child&#39;s NHIS card</p>
-  
-        <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">Yes</label>
-        </div>
-  
-        <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">No</label>
-        </div>
-  
-      </article>
-
-      <article class="rating-container" style = "display: flex; flex-direction: column; align-items:normal">
-        <p class="label">Any other undertaking&#40;s&#41; received:</p>
-  
-        <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">Yes</label>
-        </div>
-  
-        <div class="rating-option">
-          <input class="input-box" type="checkbox">
-          <label class="label">No</label>
-        </div>
-  
-      </article>
-
 
       <div class="form-group">
         <div class="form-field">

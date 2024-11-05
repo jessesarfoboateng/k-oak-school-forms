@@ -75,7 +75,6 @@ body {
   margin: 0;
   overflow-x: hidden;
   width: 100%;
-
 }
 
 .form-container {
@@ -201,8 +200,8 @@ td {
   padding: 12px;
   vertical-align: top;
   text-align: left;
-  white-space: normal; /* Allows text to wrap */
-  word-wrap: break-word; /* Ensures long words wrap */
+  white-space: normal; 
+  word-wrap: break-word;
   height: 160px;
 }
 
@@ -279,7 +278,7 @@ body {
 }
 
 .form-group {
-  flex: 1 1 100%; /* Full width on smaller screens */
+  flex: 1 1 100%;
 }
 
 .rating-container {
